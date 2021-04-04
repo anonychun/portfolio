@@ -1,0 +1,19 @@
+---
+enable: true
+topTitle: About
+title: >
+  ## About me
+
+  My name is Achmad Chun-Chun Winata Adi. People call me Achun, I am originally from the Indonesia
+content: >
+  ### I design and build ultimate things
+
+  I love to work in server side. Because I love to manage how something works,
+  solve the problem and find easy and better solutions to solve it. I always
+  try my best to make good system with the best performance. I have been working
+  as a Backend Engineer
+button1Name: Hire me
+button2Name: Download CV
+button1Target: contact
+button2Target: contact
+image: images/about/about-img.jpg

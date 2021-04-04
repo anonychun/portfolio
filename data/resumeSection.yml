@@ -1,0 +1,28 @@
+---
+enable: true
+topTitle: Resume
+title: >
+  ## My Expertises
+
+  I'm constantly seeks out innovative solutions to everyday problems, commitment to critical thinking and attention to detail. I have a passion for processes
+
+
+  I've honed my analytical thinking and collaboration skills, and I love working with a team. I would like to continue to specialize in backend software engineering
+tab1Name: Experiences
+tab2Name: Education
+tab1Target: experience
+tab2Target: education
+
+experience:
+  - content: >
+      #### Yukbisnis Indonesia
+
+      Create back-end services to manipulate dynamic datasets, designed, developed and implemented software applications for website based on analyzed requirements and understanding of industry technical standard
+    time: 2018-2021
+
+education:
+  - content: >
+      #### Ahmad Dahlan University
+
+      Studying computer science for a master's degree
+    time: 2018-Present
