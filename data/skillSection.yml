@@ -1,0 +1,21 @@
+---
+enable: true
+topTitle: Skills
+content: >
+  ## Why hire me for your next project?
+
+  My goal is to build a strong supportive professional network among all freelancers and startups in order to improve our performance
+
+image: images/skill/skill_image.jpg
+
+skill:
+  - title: Golang
+    percent: 100
+  - title: Linux
+    percent: 100
+  - title: SQL
+    percent: 100
+  - title: Docker
+    percent: 100
+  - title: RabbitMQ
+    percent: 100

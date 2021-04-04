@@ -1,0 +1,28 @@
+---
+enable: true
+topTitle: Service
+title: >
+  ## Creative Services
+
+  The things that I've been working on
+service:
+  - content: >
+      #### API
+
+      API provides have the following aspects: engagement, pleasure, familiarity, trust, and safety, that can be used to guide the design process
+    image: images/service/ui-ux.svg
+  - content: >
+      #### Database
+
+      Develops and maintains databases across an organization, while at the same time ensuring high levels of data availability
+    image: images/service/web.svg
+  - content: >
+      #### Security 
+
+      Security aware software development processes where security is built in and software is developed with security in mind
+    image: images/service/creative.svg
+  - content: >
+      #### Infrastructure
+
+      Develop infrastructure components of an application that will be used by users, heavily dependent on automation
+    image: images/service/branding.svg
