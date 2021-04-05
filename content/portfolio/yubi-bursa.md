@@ -8,6 +8,8 @@ shortDescription: Yubi Bursa is a sharia-based Peer-to-Peer Lending platform. Co
 stack:
   - name: Golang
   - name: MySQL
+  - name: Redis
+  - name: Docker
   - name: AWS S3
 ---
 
@@ -16,6 +18,8 @@ Yubi Bursa on this time article made will launch its website with features that 
 Yubi Bursa offers syariah-based peer-to-peer both in terms of funding and financing. The sharia loans offered are working capital financing for current receivables. It can be said that a productive loan product is for business and not for consumptive purposes, where the goal is loan funds without usury. How to apply for financing is (1) Register online on the Yubi Bursa website; (2) Fill in personal details including invoices and company legality documents; (3) The financing application will be analyzed and selected; (4) After the application is approved, the financing will be displayed on the marketplace.
 
 I was appointed to handle Yubi Bursa as a Back-End developer for building the RESTfull API or back-end services related stuff, Designed, developed and implemented software applications for website based on analyzed requirements and understanding of industry technical standard. Monitored automated build and continuous software integration process to drive build-release failure resolution.
+
+As the basic backend stuff, I build the Rest API using Golang for the primary language and MySQL for the primary database as a company agreement. In some cases we need some non-persistent data and also cache request data for the user, we choose Redis to handle this kinda thing. Data like (Documents, Audio, Images, etc) is stored in Amazon Simple Cloud Storage (S3) because we want these types of data separated from our server where an application is running itself. And for the deployment we are using a container to manage all of our services, Docker is chosen because it has a good reputation and features at this time.
 
 - Partner Process Flow
 
