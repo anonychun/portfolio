@@ -12,6 +12,7 @@ git submodule add -b master --force git@github.com:anonychun/anonychun.github.io
 cd public
 shopt -s extglob
 rm -r !(".git")
+cd ..
 
 hugo
 
