@@ -30,6 +30,7 @@
         <p>
           {{ .Params.shortDescription }}
         </p>
+        <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
         <div class="case-details-info">
           <div class="case-details-info-item">
             <h5 class="text-light">Client</h5>
@@ -44,28 +45,19 @@
             <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
         </div>
-        <div class="row mb-5">
-          <div class="col-lg-6">
-            <div class="case-details-service">
-              <h3>Challenge</h3>
-              <p>
-                {{ .Params.challenge }}
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="case-details-service">
-              <h3>Solution</h3>
-              <p>
-                {{ .Params.solution }}
-              </p>
-            </div>
+        <div class="mb-5" style="text-align: left;">
+          <h3>Stack</h3>
+          <ul>
+          {{ range .Params.stack }}
+            <li>{{ .name }}</li>
+          {{ end }}
+          </ul>
+          <h3></h3>
+          <h3>Detail</h3>
+          <div style="text-align: justify;">
+            {{ .Content }}
           </div>
         </div>
-        <div class="case-details-thumb mb-5">
-          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
-        </div>
-        {{ .Content }}
       </div>
     </div>
     <div class="row">
