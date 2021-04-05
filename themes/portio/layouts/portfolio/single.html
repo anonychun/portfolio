@@ -44,9 +44,7 @@
             <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
         </div>
-        <div class="case-details-thumb">
-          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
-        </div>
+        <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" style="width: 100%; height: auto;" />
         <div style="text-align: left;">
           <h3>Stack</h3>
           <ul>
