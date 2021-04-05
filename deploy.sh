@@ -9,12 +9,13 @@ fi
 
 rm -r public
 git submodule add -b master --force git@github.com:anonychun/anonychun.github.io.git public
+cd public
+shopt -s extglob
+rm -r !(".git")
 
 hugo
 
 cd public
-shopt -s extglob
-rm -r !(".git")
 git add -A
 git commit -m "$msg"
 git push origin master
