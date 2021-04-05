@@ -22,7 +22,7 @@
                     {{ range $section }}
                     <div class="testimonial__slider_item">
                         <p class="testimonial__slider_item-content"> {{ .comment | markdownify }} </p>
-                        <p class="testimonial__slider_item-author"><span>{{ .name }}</span> | {{ .time }}</p>
+                        <p class="testimonial__slider_item-author"><span>{{ .name }}</span> | {{ .role }}</p>
                     </div>
                     {{ end }}
                 </div>
