@@ -13,6 +13,8 @@ skill:
     percent: 100
   - title: Linux
     percent: 100
+  - title: Git
+    percent: 100
   - title: SQL
     percent: 100
   - title: Redis
