@@ -30,8 +30,8 @@
         <p>
           {{ .Params.shortDescription }}
         </p>
-        <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
         <div class="case-details-info">
+          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
           <div class="case-details-info-item">
             <h5 class="text-light">Client</h5>
             <p>{{ .Params.client }}</p>
