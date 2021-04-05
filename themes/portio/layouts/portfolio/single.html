@@ -31,7 +31,6 @@
           {{ .Params.shortDescription }}
         </p>
         <div class="case-details-info">
-          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
           <div class="case-details-info-item">
             <h5 class="text-light">Client</h5>
             <p>{{ .Params.client }}</p>
@@ -45,14 +44,17 @@
             <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
         </div>
-        <div class="mb-5" style="text-align: left;">
+        <div class="case-details-thumb">
+          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
+        </div>
+        <div style="text-align: left;">
           <h3>Stack</h3>
           <ul>
           {{ range .Params.stack }}
             <li>{{ .name }}</li>
           {{ end }}
           </ul>
-          <h3></h3>
+          <br>
           <h3>Detail</h3>
           <div style="text-align: justify;">
             {{ .Content }}
@@ -120,6 +122,5 @@
     </div>
   </div>
 </section>
-
 
 {{ end }}
