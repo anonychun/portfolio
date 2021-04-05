@@ -1,5 +1,12 @@
 {{ define "main" }}
 
+<style>
+  div.responsive-img img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
 <section class="section case-details">
   <div class="svg-img">
     <img src="{{ "images/hero/figure-svg.svg" | absURL }}" alt="" />
@@ -44,18 +51,20 @@
             <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
         </div>
-        <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" style="width: 100%; height: auto;" />
-        <div style="text-align: left;">
-          <h3>Stack</h3>
-          <ul>
-          {{ range .Params.stack }}
-            <li>{{ .name }}</li>
-          {{ end }}
-          </ul>
-          <br>
-          <h3>Detail</h3>
-          <div style="text-align: justify;">
-            {{ .Content }}
+        <div class="responsive-img">
+          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
+          <div style="text-align: left;">
+            <h3>Stack</h3>
+            <ul>
+            {{ range .Params.stack }}
+              <li>{{ .name }}</li>
+            {{ end }}
+            </ul>
+            <br>
+            <h3>Detail</h3>
+            <div style="text-align: justify;">
+              {{ .Content }}
+            </div>
           </div>
         </div>
       </div>
